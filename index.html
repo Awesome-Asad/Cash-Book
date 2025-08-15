@@ -1,23 +1,38 @@
-<!DOCTYPE html>
 <html>
-
-<head>
-	<link rel="stylesheet" href="Google Sheet.css">
-</head>
-
-<body>
-	<div class="container">
-		<form method="post" action="" name="contact-form">
-			<h4>CASH BOOK</h4>
-			<input type="text" name="Date" placeholder="Date">
-			<input type="text" name="Voucher" placeholder="Payment or Receipt">
-                        <textarea name="Name" rows="7" placeholder="Name of the Party"></textarea>
-			<input type="number" name="Amount" placeholder="Amount">
-			<input type="submit" value="Submit" id="submit">
-		</form>
-	</div>
-
-	<script src="Google Sheet.js"></script>
-</body>
-
-</html>
+	<head><title>Cash Book</title></head>
+	<body>
+<div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <form method="POST" action="https://script.google.com/macros/s/AKfycbwKXg8Ok3rACIEm5PQGl6lRxHPUl82vuqZG2Qr41mhKposYYvfBR7bk7Br1kWihsAuO/exec">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" name="name" placeholder="Your Name">
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" name="email" placeholder="Your Email">
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" name="subject" placeholder="Subject">
+                                    <label for="subject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a message here" name="message" style="height: 100px"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+		</body>
+				</html>
